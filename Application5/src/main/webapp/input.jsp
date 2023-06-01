@@ -6,15 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UserInput</title>
 <style>
-    label{
-        margin-bottom: 30px;
-        display: block;
-    }
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
 
-    input{
-        margin-bottom: 5px;
-    }
-</style>
+        input {
+            margin-bottom: 25px;
+        }
+
+        .getbyid{
+            background-color: rgb(251, 204, 142);
+        }
+
+        .input{
+            background-color: antiquewhite;
+        }
+        .getall{
+            background-color: rgba(0, 255, 255, 0.427);
+        }
+        .delete{
+            background-color: rgb(242, 183, 182);
+        }
+        .update{
+            background-color: rgb(241, 182, 242);
+        }
+    </style>
 
 </head>
 <body>
