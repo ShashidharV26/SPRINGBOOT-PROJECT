@@ -41,11 +41,14 @@ public class UserController {
 	}
 
 	@RequestMapping("/getAllUsers")
-	@ResponseBody
-	List<User> getAllUsers(HttpSession h, User u) {
+	String getAllUsers(HttpSession h, User u) {
 		List<User> user1 = ser.getAllData(u);
-		return user1;
-
+		ArrayList<User> aList=new ArrayList<>();
+		for(User user:user1) {
+			aList.add(user);
+			h.setAttribute("message", aList);
+		}
+		return "show.jsp";
 	}
 
 	@RequestMapping("/deleteById")
